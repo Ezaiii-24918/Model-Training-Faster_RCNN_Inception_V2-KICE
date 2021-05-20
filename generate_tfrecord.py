@@ -29,20 +29,11 @@ FLAGS = flags.FLAGS
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
-    if row_label == 'motorcycle':
+    if row_label == 'busy':
         return 1
-    elif row_label == 'pickup':
-        return 2
-    elif row_label == 'sedan':
-        return 3
-    elif row_label == 'van':
-        return 4
-    elif row_label == 'truck':
-        return 5
-    elif row_label == 'bus':
-        return 6
     else:
-        None
+        return 0
+
 
 
 def split(df, group):
